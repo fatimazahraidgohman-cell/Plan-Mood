@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Hebdomadaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📅 Mon Plan Hebdomadaire</h1>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="plan.html">Plan Hebdomadaire</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="progress-section">
+            <h3>Progression de la semaine: <span id="progress-percentage">0%</span></h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </section>
+
+        <table class="weekly-plan">
+            <thead>
+                <tr>
+                    <th>Jour</th>
+                    <th>Tâches</th>
+                    <th>Statut</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lundi</td>
+                    <td class="task-content">Révision cours Mathématiques</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Mardi</td>
+                    <td class="task-content">Projet programmation</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Mercredi</td>
+                    <td class="task-content">Recherche bibliographique</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Jeudi</td>
+                    <td class="task-content">Exercices Physique</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Vendredi</td>
+                    <td class="task-content">Préparation présentation</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Samedi</td>
+                    <td class="task-content">Révision générale</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td class="task-content">Planification semaine suivante</td>
+                    <td><span class="status pending">En attente</span></td>
+                    <td><button class="btn-small" onclick="toggleTask(this)">Marquer fait</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="back-link">
+            <a href="index.html" class="btn">← Retour à l'accueil</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mon Portfolio Universitaire</p>
+        </div>
+    </footer>
+</body>
+</html>
